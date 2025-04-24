@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+
+:root {
+    --purple : #592acb;
+    --pink : #ab2acb;
+    --purple-hover : #4718a9;
+    --white: #fff;
+    --gray: #9a9a9a
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+button{
+    font-family: 'Inter', sans-serif;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Reutilizables */
+
+.button_secondary{
+    background: transparent;
+    border: 2px solid var(--purple);
+    color: var(--purple)
+}
+
+.button_primary{
+    background: var(--purple);
+    border: none;
+    color: var(--white);
+}
+
+.button_primary:hover{
+    background: var(--purple-hover);
+    border: none;
+    color: var(--white);
+}
+
+.input__primary{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+/* Reutilizables */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar img {
+    height: 32px;
+    width: 213px;
+}
+
+.main {
+    margin-top: 200px;
+    width: 100%;
+}
+
+/*Section one*/
+
+.main__section__one {
+    width: 90%;
+    max-width: 1366px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+}
+
+.main__section__one--info{
+    width: 60%;
+    padding: 0 5em;
+}
+
+.main__section__one--info h1 {
+    font-size: 40px;
+    margin-bottom: 0.5em;
+}
+
+.main__section__one--info form input{
+    width: 45%;
+    margin: 20px 0;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+
+.main__section__one--info form button{
+    width: 40%;
+    padding: 17px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.main__section__one--info--note{
+    width: 46%;
+}
+.main__section__one--info--note p{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.main__section__one--img{
+    width: 40%;
+    
+}
+
+.main__section__one--img img {
+    width: 100%;
+}
+
+.main__section__two{
+    width: 60%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*Section one*/
+
+/*Section two*/
+.main__section__two p{
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main__section__two p span{
+    color: var(--pink);
+}
+/*Section two*/
