@@ -6,7 +6,7 @@
     --pink : #ab2acb;
     --purple-hover : #4718a9;
     --white: #fff;
-    --gray: #9a9a9a;
+    --gray: #898989;
     --light-gray: #ededfd;
     --lila: #e1dbf3;
 }
@@ -28,6 +28,8 @@ ul {
     flex-direction: column;
     gap: 10px;
 }
+
+
 /* Reutilizables */
 
 .button_secondary{
@@ -245,6 +247,7 @@ p {
 
 .main__section__four--questions--question--content {
     display: none;
+    color: var(--gray);
 }
 
 /*Section four*/
@@ -265,5 +268,24 @@ p {
     }
     100% {
     transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .main__section__one{
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 0.5em;
+    }
+    .main__section__one--info{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .main__section__one--img{
+        width: 80%;
+        padding: 0;
     }
 }
