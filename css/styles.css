@@ -6,7 +6,9 @@
     --pink : #ab2acb;
     --purple-hover : #4718a9;
     --white: #fff;
-    --gray: #9a9a9a
+    --gray: #9a9a9a;
+    --light-gray: #ededfd;
+    --lila: #e1dbf3;
 }
 * {
     margin: 0;
@@ -21,7 +23,11 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
-
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* Reutilizables */
 
 .button_secondary{
@@ -64,7 +70,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 20px 80px;
     background: var(--white);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -75,16 +81,17 @@ p {
 }
 
 .main {
-    margin-top: 200px;
+    margin-top: 70px;
     width: 100%;
 }
 
 /*Section one*/
 
 .main__section__one {
-    width: 90%;
-    max-width: 1366px;
-    margin: 100px auto;
+    width: 99vw;
+    /*max-width: 1366px;*/
+    margin: auto;
+    padding: 100px;
     display: flex;
     align-items: center;
 }
@@ -131,19 +138,22 @@ p {
     width: 100%;
 }
 
-.main__section__two{
-    width: 60%;
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
+
 
 /*Section one*/
 
 /*Section two*/
+
+.main__section__two{
+    width: 60vw;
+    /*max-width: 1366px;*/
+    height: 20vh;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+}
+
 .main__section__two p{
-    margin: 10px 0;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -152,3 +162,39 @@ p {
     color: var(--pink);
 }
 /*Section two*/
+
+/*Section three*/
+.main__section__three{
+    width: 99vw;
+    /*max-width: 1366px;*/
+
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1em;
+}
+
+.main__section__three form input{
+    margin: 10px;
+    width: 45%;
+}
+
+.main__section__three button{
+    padding: 15px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.main__section__three p {
+    margin-top: 10px;
+}
+
+.main__section__three--companies{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+/*Section three*/
